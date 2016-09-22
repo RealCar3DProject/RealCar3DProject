@@ -175,6 +175,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private void CapSpeed()
         {
             float speed = m_Rigidbody.velocity.magnitude;
+
             switch (m_SpeedType)
             {
                 case SpeedType.MPH:

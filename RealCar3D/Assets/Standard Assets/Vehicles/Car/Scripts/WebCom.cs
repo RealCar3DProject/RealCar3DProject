@@ -13,10 +13,11 @@ public class WebCom : MonoBehaviour
 
     public string uStunServer = "stun:stun.l.google.com:19302";
 
-    public Action<string> controllerData;
-
     public Text RandomText;
 
+    public Action<string> carData;
+
+    private string temp;
     private IBasicNetwork mNetwork = null;
 
     private string accessCode;
@@ -62,6 +63,7 @@ public class WebCom : MonoBehaviour
     {
         //check each fixed update if we have got new events
         HandleNetwork();
+
     }
 
     private void HandleNetwork()
@@ -138,7 +140,7 @@ public class WebCom : MonoBehaviour
 
         string msg = Encoding.UTF8.GetString(buffer.Buffer, 0, buffer.ContentLength);
 
-        controllerData.Invoke(msg);
+        carData.Invoke(msg);
 
         if (mIsServer)
         {
