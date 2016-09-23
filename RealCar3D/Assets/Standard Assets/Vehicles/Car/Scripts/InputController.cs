@@ -41,15 +41,13 @@ namespace Assets.Standard_Assets.Vehicles.Car.Scripts
             ForwardData(carDataController.forwardCoolDown);
 
 
-
-
             if (!carDataController.backwordCoolDown)
             {
                 ReverseData(carDataController.backwordCoolDown);
 
             }
 
-            if (carDataController.Break || (carDataController.backwordCoolDown && carDataController.forwardCoolDown))
+            if ((carDataController.backwordCoolDown && carDataController.forwardCoolDown))
             {
                 horizontalInput = 0;
             }
@@ -58,6 +56,11 @@ namespace Assets.Standard_Assets.Vehicles.Car.Scripts
             return horizontalInput;
         }
 
+        public int GetBreak()
+        {
+
+            return carDataController.Break;
+        }
         public float GetVertical()
         {
             return carDataController.gyro;
@@ -65,7 +68,6 @@ namespace Assets.Standard_Assets.Vehicles.Car.Scripts
 
         private void ForwardData(bool isForward)
         {
-            Debug.Log(isForward);
             if (!isForward)
             {
                 horizontalInput += 0.3f;
