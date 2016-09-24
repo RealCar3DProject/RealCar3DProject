@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9b25b32c363481340bc579e03181f4fc
-timeCreated: 1474662112
+timeCreated: 1474719614
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -10,7 +10,7 @@ SubstanceImporter:
     prototypeName: New_Graph
     shaderName: 
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _NORMALMAP _SPECGLOSSMAP
+    shaderKeywords: _EMISSION _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECGLOSSMAP
     renderQueue: -1
     lightmapFlags: 1
     inputs:
@@ -254,7 +254,7 @@ SubstanceImporter:
         second: 0
       - first:
           name: _GlossMapScale
-        second: 1
+        second: 0.67
       - first:
           name: _Glossiness
         second: 0.5
@@ -275,7 +275,7 @@ SubstanceImporter:
         second: 0.02
       - first:
           name: _SmoothnessTextureChannel
-        second: 0
+        second: 1
       - first:
           name: _SpecularHighlights
         second: 1

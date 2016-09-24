@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: be8a7e2d0c1dc5b4d9ce2abcbb7031f6
+timeCreated: 1474720875
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BodyFront
+    100004: BodyMiddle
+    100006: BodyRear
+    100008: Camera_Perspective14
+    100010: Engine
+    100012: FrontWheels
+    100014: Glass
+    100016: Interior
+    100018: InteriorRoof
+    100020: LightPreset
+    100022: Plane
+    100024: RearWheels
+    100026: Sky Light
+    100028: Sun Light
+    100030: WheelWells
+    400000: //RootNode
+    400002: BodyFront
+    400004: BodyMiddle
+    400006: BodyRear
+    400008: Camera_Perspective14
+    400010: Engine
+    400012: FrontWheels
+    400014: Glass
+    400016: Interior
+    400018: InteriorRoof
+    400020: LightPreset
+    400022: Plane
+    400024: RearWheels
+    400026: Sky Light
+    400028: Sun Light
+    400030: WheelWells
+    2300000: BodyFront
+    2300002: BodyMiddle
+    2300004: BodyRear
+    2300006: Engine
+    2300008: FrontWheels
+    2300010: Glass
+    2300012: Interior
+    2300014: InteriorRoof
+    2300016: Plane
+    2300018: RearWheels
+    2300020: WheelWells
+    3300000: BodyFront
+    3300002: BodyMiddle
+    3300004: BodyRear
+    3300006: Engine
+    3300008: FrontWheels
+    3300010: Glass
+    3300012: Interior
+    3300014: InteriorRoof
+    3300016: Plane
+    3300018: RearWheels
+    3300020: WheelWells
+    4300000: BodyMiddle
+    4300002: InteriorRoof
+    4300004: Plane
+    4300006: WheelWells
+    4300008: BodyFront
+    4300010: RearWheels
+    4300012: Engine
+    4300014: Glass
+    4300016: FrontWheels
+    4300018: BodyRear
+    4300020: Interior
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - BodyFront
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: LightPreset
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Sun Light
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: audi-r8-red(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BodyFront
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BodyMiddle
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BodyRear
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Camera_Perspective14
+      position: {x: 2.0734, y: 1.4227, z: 2.2691}
+      rotation: {x: -0.08219582, y: -0.35981122, z: 0.19907537, w: 0.9078264}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Engine
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: FrontWheels
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Glass
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Interior
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: InteriorRoof
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LightPreset
+      position: {x: -0, y: 2.0984, z: 0}
+      rotation: {x: 0, y: 0.64944804, z: -0, w: 0.76040596}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sky Light
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Sun Light
+      position: {x: 26.040771, y: 45.57135, z: 26.040771}
+      rotation: {x: 0.2773501, y: 0.18490008, z: -0.18490006, w: 0.92450035}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Plane
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RearWheels
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: WheelWells
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
