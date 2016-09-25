@@ -10,10 +10,10 @@ namespace UnityStandardAssets.Vehicles.Car
     {
         public CarAIControl[] aiCars;
 
+        public float handbrake;
+        private float h;
+        private float v;
         private CarController m_Car; // the car controller we want to use
-        private float forWard = 0;
-        private float direction = 0;
-        private string carData;
         private float startTime = 10;
         private bool started;
         private void Awake()
@@ -33,17 +33,26 @@ namespace UnityStandardAssets.Vehicles.Car
                 {
                     aiCars[i].enabled = true;
                 }
+
                 started = true;
             }
 
+            if (!CarManager.isPlaying)
+            {
 
-            startTime -= Time.deltaTime;
+                startTime -= Time.deltaTime;
 
-            float h = InputController.instance.GetVertical();
-            float v = InputController.instance.GetHorizontal();
+                h = InputController.instance.GetVertical();
+                v = InputController.instance.GetHorizontal();
+                handbrake = InputController.instance.GetBreak();
+
+            }
+            else
+            {
+                handbrake = 1;
+            }
 
 #if !MOBILE_INPUT
-            float handbrake = InputController.instance.GetBreak();
 
             m_Car.Move(h, v, v, handbrake);
 #else

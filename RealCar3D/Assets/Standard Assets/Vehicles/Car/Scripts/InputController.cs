@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Standard_Assets.Vehicles.Car.Scripts
 {
@@ -26,7 +24,7 @@ namespace Assets.Standard_Assets.Vehicles.Car.Scripts
             instance = this.gameObject.GetComponent<InputController>();
             carDataController = new CarDataController();
             webCom.carData = GetData;
-
+            Debug.Log(webCom.gameObject.name);
         }
 
         private void GetData(string data)
