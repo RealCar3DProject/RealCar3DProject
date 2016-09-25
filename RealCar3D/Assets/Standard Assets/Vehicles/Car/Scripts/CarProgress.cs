@@ -5,7 +5,7 @@ public class CarProgress : MonoBehaviour
     [HideInInspector]
     public string labsTimer;
 
-    public int carLabs;
+    public int carLaps;
     public float minutes;
     public float seconds;
     private float timer;
@@ -22,6 +22,6 @@ public class CarProgress : MonoBehaviour
 
     public void MakeLab()
     {
-        carLabs--;
+        carLaps++;
     }
 }

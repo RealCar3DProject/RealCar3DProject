@@ -6,9 +6,10 @@ using UnityStandardAssets.Vehicles.Car;
 public class CarManager : MonoBehaviour
 {
 
-    public int labsCounter = 1;
+    public int lapsCounter = 1;
     public GameObject finalScore;
     public GameObject ScoreText;
+    public Text laps;
     public AutoCam mainCamera;
     public static bool isPlaying;
     private string labsTimer;
@@ -18,6 +19,8 @@ public class CarManager : MonoBehaviour
     private void Start()
     {
         carsFinished = new Dictionary<string, string>();
+        laps.text = string.Format("{0}/{1}", 0, lapsCounter);
+
     }
     private void OnTriggerEnter(Collider car)
     {
@@ -27,7 +30,7 @@ public class CarManager : MonoBehaviour
 
         if (car.CompareTag("AICar"))
         {
-            if (currentCarProgress.carLabs <= 0)
+            if (lapsCounter - currentCarProgress.carLaps <= 0)
             {
                 labsTimer = TimeToMinutes(currentCarProgress);
                 if (!carsFinished.ContainsKey(currentCar.name))
@@ -47,11 +50,13 @@ public class CarManager : MonoBehaviour
 
         if (car.CompareTag("Player"))
         {
-            if (currentCarProgress.carLabs <= 0)
+
+            laps.text = string.Format("{0}/{1}", currentCarProgress.carLaps, lapsCounter);
+
+            if (lapsCounter - currentCarProgress.carLaps <= 0)
             {
                 if (!carsFinished.ContainsKey(currentCar.name))
                 {
-
                     isPlaying = true;
                     labsTimer = TimeToMinutes(currentCarProgress);
                     mainCamera.enabled = false;
