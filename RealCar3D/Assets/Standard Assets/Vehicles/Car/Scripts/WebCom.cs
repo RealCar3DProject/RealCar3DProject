@@ -139,7 +139,7 @@ public class WebCom : MonoBehaviour
         MessageDataBuffer buffer = (MessageDataBuffer)evt.MessageData;
 
         string msg = Encoding.UTF8.GetString(buffer.Buffer, 0, buffer.ContentLength);
-
+        Debug.Log(msg);
         carData.Invoke(msg);
 
         if (mIsServer)

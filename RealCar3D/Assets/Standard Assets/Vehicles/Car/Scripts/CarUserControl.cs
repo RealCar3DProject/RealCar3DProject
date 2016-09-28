@@ -42,9 +42,9 @@ namespace UnityStandardAssets.Vehicles.Car
 
                 startTime -= Time.deltaTime;
 
-                h = Input.GetAxis("Horizontal");// InputController.instance.GetVertical();
-                v = Input.GetAxis("Vertical");// InputController.instance.GetHorizontal();
-                handbrake = Input.GetAxis("Jump"); //InputController.instance.GetBreak());
+                h = InputController.instance.GetVertical();
+                v =  InputController.instance.GetHorizontal();
+                handbrake = InputController.instance.GetBreak();
 
             }
             else
